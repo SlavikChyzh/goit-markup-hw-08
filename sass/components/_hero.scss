@@ -1,0 +1,75 @@
+.hero {
+  min-width: 480px;
+  height: auto;
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $hero-bgc;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hero/hero_mobile_x1.jpg);
+
+  @include tablet {
+    min-width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/hero_tablet_x1.jpg);
+  }
+
+  @include desktop {
+    min-width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/hero_desktop_x1.jpg);
+  }
+}
+
+.hero__title {
+  display: block;
+  max-width: 360px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  @include desktop {
+    max-width: 730px;
+    font-size: 44px;
+    line-height: 1.35;
+  }
+}
+
+.hero__button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.35;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: $footer-color;
+  cursor: pointer;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px transparent;
+  margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+}

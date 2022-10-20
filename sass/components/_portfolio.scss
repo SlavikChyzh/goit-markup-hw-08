@@ -1,0 +1,121 @@
+/*portfolio btn*/
+
+.sort {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sort__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  background: $button-filter-color;
+  cursor: pointer;
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+    color: $footer-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.sort__button {
+  margin-left: 8px;
+}
+
+/*portfolio works*/
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.portfolio__item {
+  display: flex;
+
+  &:hover .portfolio__hover--overlay {
+    transform: translateX(0);
+  }
+}
+.portfolio__work {
+  display: block;
+  flex-basis: calc((100%) / 3);
+  margin: 15px;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  transition-property: background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.portfolio__img {
+  display: block;
+}
+.portfolio__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.frame {
+  border-right: solid 1px $frame-color;
+  border-bottom: solid 1px $frame-color;
+  border-left: solid 1px $frame-color;
+  padding: 20px 24px;
+}
+.portfolio__box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__hover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  background-color: var(--work-overlay-bgc);
+  padding: 0 24px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $footer-color;
+}
+
+.portfolio__name {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__type {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $description-color;
+}

@@ -1,0 +1,48 @@
+.connect {
+  display: block;
+}
+
+.connect__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $footer-color;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.connect__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__svg {
+  width: 20px;
+  height: 20px;
+  fill: $footer-color;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+  }
+}
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

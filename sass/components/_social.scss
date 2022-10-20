@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  justify-content: center;
+}
+.social__link > svg {
+  fill: $logo-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link:hover > svg,
+.social__link:focus > svg {
+  fill: $footer-color;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+  }
+}
