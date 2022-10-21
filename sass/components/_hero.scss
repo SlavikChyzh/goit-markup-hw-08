@@ -10,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero/hero_mobile_x1.jpg);
+    url(../images/hero/hero_mobile_x1.jpg);
 
   @include tablet {
     min-width: 768px;
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero/hero_tablet_x1.jpg);
+      url(../images/hero/hero_tablet_x1.jpg);
   }
 
   @include desktop {
@@ -27,7 +27,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero/hero_desktop_x1.jpg);
+      url(../images/hero/hero_desktop_x1.jpg);
   }
 }
 
