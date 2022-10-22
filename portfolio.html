@@ -19,49 +19,126 @@
 
 <body>
 
-  <!--Header-->
+  <!-- Header -->
   <header class="page-header">
     <div class="container header">
-      <nav class="navigation">
-        <a href="./index.html" class="logo-link logo-link--header-margin"><span lang="en">Web<span
-              class="logo-link__studio logo-link__studio--header-color">Studio</span></span></a>
-        <ul class="navigation__list list">
-          <li class="navigation__item">
-            <a href="./index.html" class="navigation__link link ">Студія</a>
-          </li>
-          <li class="navigation__item">
-            <a href="./portfolio.html" class="navigation__link navigation__link--active link">Портфоліо</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contacts" class="navigation__link link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contact list">
-        <li class="contact__item">
-          <a href="mailto:info@devstudio.com" class="link contact__mail">
-            <div class="logo-cont">
-              <svg class="envelope-svg">
-                <use href="./images/icons.svg#icon-envelope">
-                </use>
-              </svg>
-            </div>
-            info@devstudio.com
-          </a>
+      <!--Logo Link-->
+      <div>
+        <a href="./index.html" class="logo-link logo-link--header">
+          <span lang="en">Web<span class="logo-link__studio logo-link__studio--header-color">Studio</span></span>
+        </a>
+      </div>
+
+      <!--Mobile navigation-->
+      <div>
+        <button type="button" class="open-mobile-nav open-modal" data-modal2-open>
+          <svg class="open-mobile-nav__svg">
+            <use href="./images/icons.svg#open-mobile-nav"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="backdrop is-hidden" data-modal2="">
+        <div class="mobile-nav-modal no-scroll">
+          <button type="button" class="close-mobile-nav" data-modal2-close>
+            <svg class="modal-close">
+              <use href="./images/icons.svg#close">
+              </use>
+            </svg>
+          </button>
+          <nav class="mobile-navigation">
+            <ul class="mobile-navigation__list list">
+              <li class="mobile-navigation__item">
+                <a href="./index.html" class="mobile-navigation__link mobile-navigation__link--active link">Студія</a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a href="./portfolio.html" class="mobile-navigation__link link">Портфоліо</a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a href="#contacts" class="mobile-navigation__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact list">
+            <li class="mobile-contact__item">
+              <a href="mailto:info@devstudio.com" class="link mobile-contact__mail">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="tel:+380961111111" class="link mobile-contact__tell">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="header-social list">
+            <li class="header-social__item">
+              <a href="https://www.instagram.com/" class="header-social__link link">
+                Instagram</a>
+            </li>
+            <li>
+              <p class="pipeline">|</p>
+            </li>
+            <li class="header-social__item">
+              <a href="https://twitter.com/" class="header-social__link link">
+                Twitter</a>
+            </li>
+            <li>
+              <p class="pipeline">|</p>
+            </li>
+            <li class="header-social__item">
+              <a href="https://www.facebook.com/" class="header-social__link link">
+                Facebook</a>
+            </li>
+            <li>
+              <p class="pipeline">|</p>
+            </li>
+            <li class="header-social__item">
+              <a href="https://www.linkedin.com/" class="header-social__link link">
+                LinkedIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Normal navigation-->
+    <nav class="navigation">
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a href="./index.html" class="navigation__link link navigation__link--active ">Студія</a>
         </li>
-        <li class="contact__item">
-          <a href="tel:+380961111111" class="link contact__tell">
-            <div class="logo-cont">
-              <svg class="phone-svg">
-                <use href="./images/icons.svg#icon-phone">
-                </use>
-              </svg>
-            </div>
-            +38 096 111 11 11
-          </a>
+        <li class="navigation__item">
+          <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link link">Контакти</a>
         </li>
       </ul>
-    </div>
+    </nav>
+
+    <ul class="contact list">
+      <li class="contact__item">
+        <a href="mailto:info@devstudio.com" class="link contact__mail">
+          <div class="logo-cont">
+            <svg class="mail-svg">
+              <use href="./images/icons.svg#icon-envelope">
+              </use>
+            </svg>
+          </div>info@devstudio.com
+        </a>
+      </li>
+      <li class="contact__item">
+        <a href="tel:+380961111111" class="link contact__tell">
+          <div class="logo-cont">
+            <svg class="phone-svg">
+              <use href="./images/icons.svg#icon-phone">
+              </use>
+            </svg>
+          </div>+38 096 111 11 11
+        </a>
+      </li>
+    </ul>
   </header>
 
   <main>
@@ -239,6 +316,7 @@
       <h2 class="visually-hidden" id="#contacts">
         Контакти
       </h2>
+
       <address class="address">
         <ul class="address__contact list">
           <li class="address__item">
@@ -292,8 +370,8 @@
       </div>
 
       <div class="subs">
-        <form name="subscribe-form" autocomplete="on" novalidate class="subscribe">
-          <label class="subscribe__input">
+        <form name="subscribe__form" autocomplete="on" novalidate class="subscribe">
+          <label class="subscribe__label">
             <span class="subscribe__text">Підпишіться на розсилку</span>
             <input type="email" name="email" placeholder="E-mail" class="subscribe__input" />
           </label>
@@ -307,6 +385,8 @@
       </div>
     </div>
   </footer>
+
 </body>
+<script src="./js/modal.js"></script>
 
 </html>

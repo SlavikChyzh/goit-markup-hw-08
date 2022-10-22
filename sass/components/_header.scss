@@ -3,16 +3,24 @@
   flex-direction: row;
   align-items: center;
   border-bottom: solid 1px #ececec;
-  height: auto;
   position: relative;
-  max-width: 1200px;
+  height: 60px;
+  max-width: 450px;
   margin: 0 auto;
-  min-height: 60px;
   @media screen and(min-width:768px) {
-    min-height: 80px;
+    width: 768px;
+    max-width: none;
+    height: auto;
+  }
+  @media screen and(min-width:1200px) {
+    width: 1200px;
   }
 }
 
+.header {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 /*Mobile Navigation*/
 
 .open-mobile-nav__svg {
@@ -27,8 +35,8 @@
   height: 40px;
   padding: 0;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 10px;
+  top: 10px;
   @include tablet {
     display: none;
   }
@@ -124,38 +132,36 @@
   @include tablet {
     display: contents;
     display: flex;
-    position: absolute;
-    left: 255px;
+    margin-left: 72px;
+  }
+  @include desktop {
+    margin-left: 92px;
   }
 }
 .contact {
   display: none;
   @include tablet {
-    display: flex;
-    vertical-align: middle;
-  }
-
-  @include tablet {
     display: contents;
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
-    position: absolute;
     right: 15px;
+    margin-left: 80px;
   }
   @include desktop {
     flex-direction: row;
+    margin-left: 300px;
   }
 }
 .contact__item {
-  display: block;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @include desktop {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .logo-cont {
   height: 12px;
-  justify-content: center;
 }
 .contact__mail,
 .contact__tell {
@@ -199,7 +205,7 @@
 }
 .navigation__item {
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 }
 
@@ -220,4 +226,5 @@
   height: 12px;
   justify-content: baseline;
   fill: currentColor;
+  margin-right: 10px;
 }

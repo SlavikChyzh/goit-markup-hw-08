@@ -1,8 +1,7 @@
 .we-do {
-  display: none;
-
-  @media screen and(min-width: 1200px) {
-    display: contents;
+  padding-top: 0;
+  @media screen and(max-width: 1199px) {
+    display: none;
   }
 }
 
@@ -24,6 +23,13 @@
 .we-do__description {
   display: block;
   color: $footer-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3px;
+  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   padding: 27px 0;
   text-align: center;
@@ -31,8 +37,6 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-weight: 700;
-  font-size: 17px;
 }
 .we-do__thumb {
   position: relative;

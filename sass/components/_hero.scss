@@ -1,7 +1,7 @@
 .hero {
   max-width: 767px;
   height: auto;
-  padding: 200px 0;
+  padding: 120px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,13 +22,14 @@
   }
 
   @include desktop {
-    width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/hero_desktop_x1.jpg);
+    padding: 200px 0;
   }
 }
 

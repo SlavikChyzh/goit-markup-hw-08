@@ -189,6 +189,20 @@
   margin-top: 19px;
 }
 
+.conditions {
+  margin-top: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 .applybox .check {
   border: 2px solid var(--secondary-text-color);
 }
@@ -204,4 +218,8 @@
   translate: 0 -50%;
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
+}
+
+.terms-agreement {
+  color: $link-color;
 }

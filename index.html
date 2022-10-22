@@ -25,20 +25,21 @@
       <!--Logo Link-->
       <div>
         <a href="./index.html" class="logo-link logo-link--header">
-          <span lang="en">Web<span class="logo-link__studio logo-link__studio--header-color">Studio</span></span></a>
+          <span lang="en">Web<span class="logo-link__studio logo-link__studio--header-color">Studio</span></span>
+        </a>
       </div>
 
       <!--Mobile navigation-->
       <div>
-        <button type="button" class="open-mobile-nav open-modal" data-modal-open>
+        <button type="button" class="open-mobile-nav open-modal" data-modal2-open>
           <svg class="open-mobile-nav__svg">
             <use href="./images/icons.svg#open-mobile-nav"></use>
           </svg>
         </button>
       </div>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal2="">
         <div class="mobile-nav-modal no-scroll">
-          <button type="button" class="close-mobile-nav" data-modal-close>
+          <button type="button" class="close-mobile-nav" data-modal2-close>
             <svg class="modal-close">
               <use href="./images/icons.svg#close">
               </use>
@@ -148,7 +149,7 @@
         <h1 class="hero__title">
           Ефективні рішення для вашого бізнесу
         </h1>
-        <button type="button" class="hero__button open-modal button" data-modal2-open>
+        <button type="button" class="hero__button open-modal button" data-modal-open>
           Замовити послугу
         </button>
       </div>
@@ -513,6 +514,7 @@
         <h2 class="visually-hidden" id="#contacts">
           Контакти
         </h2>
+
         <address class="address">
           <ul class="address__contact list">
             <li class="address__item">
@@ -623,14 +625,11 @@
             <input type="checkbox" id="conditions" class="check" name="check" />
 
             <label for="conditions" class="conditions"><span class="check-icon"></span>Погоджуюся з розсилкою та приймаю
-
+              <a href="https://policies.google.com/terms?hl=uk" class="link terms-agreement" target="_blank"
+                rel="noreferrer noopener">Умови
+                договору</a>
             </label>
-            <a href="https://policies.google.com/terms?hl=uk" class="link terms-agreement" target="_blank"
-              rel="noreferrer noopener">Умови
-              договору</a>
           </div>
-
-
           <button type="submit" class="send-btn">Відправити</button>
         </div>
       </div>

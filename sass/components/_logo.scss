@@ -10,13 +10,8 @@
 }
 
 .logo-link--header {
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  @include tablet {
-    top: 20px;
-  }
+  display: flex;
+  padding-left: 0;
 }
 
 .logo-link__studio--header-color {

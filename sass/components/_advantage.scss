@@ -44,6 +44,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  @media screen and(min-width:768px) {
+    text-align: left;
+  }
 }
 .advantage__description {
   font-weight: 400;
