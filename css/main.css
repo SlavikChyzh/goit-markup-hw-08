@@ -599,7 +599,7 @@ body {
 }
 
 .hero {
-  min-width: 480px;
+  max-width: 767px;
   height: auto;
   padding: 200px 0;
   background-repeat: no-repeat;
@@ -611,14 +611,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
+    max-width: 1199px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_tablet_x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_tablet_x1.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 768px;
+    width: 1200px;
+    margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_desktop_x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desktop_x1.jpg);
   }
@@ -709,7 +710,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background: rgb(245, 244, 250);
@@ -746,7 +747,7 @@ body {
 
 .advantage__description {
   font-weight: 400;
-  width: 450px;
+  max-width: 450px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -859,7 +860,7 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .employee {
@@ -873,7 +874,7 @@ body {
 }
 
 .employee__img {
-  width: 450px;
+  max-width: 450px;
   height: auto;
 }
 @media screen and (min-width: 768px) {
