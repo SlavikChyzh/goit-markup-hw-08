@@ -30,7 +30,7 @@
   }
 }
 .employee__img {
-  width: 450px;
+  max-width: 450px;
   height: auto;
   @media screen and (min-width: 768px) {
     width: 354px;
